@@ -1,4 +1,21 @@
 # OSU Connections in a Graph
-Enjoy
+Made in collaboration with @praeludiumOrbis
 
-Code is not ready to run, replace values in /OsuLinkGraph Main at :20 and :21
+## The project
+Displaying the connections in the OSU community and its country clusters in a graph. 
+
+## Usage
+<p>
+Simplest way to run is to install the dotnet 8 runtime and run as local build.<br>
+Create an appsettings.json in the root folder, consult appsettings.example.json for reference.<br>
+Set your OSU api key and the delay between each api call
+</p>
+
+```
+dotnet run -- <arguments>
+dotnet run -- --help
+```
+
+<p>
+The result will be edges.csv and nodes.csv, ready for import into Gephi.
+</p>

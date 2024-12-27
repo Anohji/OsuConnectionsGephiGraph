@@ -1,15 +1,13 @@
+using CsvHelper.Configuration;
 using CsvHelper.Configuration.Attributes;
 
-namespace OsuLinkGraphToGephi.Models;
-public class BaseCSV{
-    [Name("Name")]
-    public string? Name {get; set;}
+namespace OsuConnectionsGephiGraph.Models;
 
-    [Name("ID")]
-    public string? Id {get; set;}
-
-    [Name("ConnectedIds")]
-    public string? Nodes {get; set;}
+public class GephiNodeCSV{
+    [Name("Id")]
+    public string Id;
+    [Name("Label")]
+    public string Label;
 
     [Name("JoinDate")]
     public string? JoinDate { get; set; }

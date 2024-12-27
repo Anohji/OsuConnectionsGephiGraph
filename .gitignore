@@ -1,5 +1,6 @@
 ## Custom gitignore
 *.csv
+appsettings.json
 
 ## Default dotnet gitignore
 ## Ignore Visual Studio temporary files, build results, and

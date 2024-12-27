@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 
-namespace OsuLinkGraph.Models;
+namespace OsuConnectionsGephiGraph.Models;
 
 public class UserPageJSON
 {

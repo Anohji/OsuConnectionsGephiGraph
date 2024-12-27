@@ -1,6 +1,6 @@
 using CsvHelper.Configuration;
 
-namespace OsuLinkGraph.Models;
+namespace OsuConnectionsGephiGraph.Models;
 public class BaseCSVMap : ClassMap<BaseCSV>{
     public BaseCSVMap(){
         Map(m => m.Name).Name("Name");

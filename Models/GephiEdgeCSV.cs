@@ -1,7 +1,7 @@
 using CsvHelper.Configuration;
 using CsvHelper.Configuration.Attributes;
 
-namespace OsuLinkGraphToGephi.Models;
+namespace OsuConnectionsGephiGraph.Models;
 
 public class GephiEdgeCSV{
     [Name("Source")]

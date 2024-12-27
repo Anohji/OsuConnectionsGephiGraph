@@ -1,6 +1,6 @@
 using CsvHelper.Configuration;
 
-namespace OsuLinkGraphToGephi.Models;
+namespace OsuConnectionsGephiGraph.Models;
 
 public class GephiEdgeCSVMap : ClassMap<GephiEdgeCSV>{
     public GephiEdgeCSVMap(){

@@ -1,11 +1,11 @@
 using CsvHelper.Configuration;
 
-namespace OsuLinkGraphToGephi.Models;
-public class BaseCSVMap : ClassMap<BaseCSV>{
-    public BaseCSVMap(){
-        Map(m => m.Name).Name("Name");
-        Map(m =>m.Id).Name("ID");
-        Map(m => m.Nodes).Name("ConnectedIds");
+namespace OsuConnectionsGephiGraph.Models;
+
+public class GephiNodeCSVMap : ClassMap<GephiNodeCSV>{
+    public GephiNodeCSVMap(){
+        Map(m => m.Id).Name("Id");
+        Map(m => m.Label).Name("Label");
         Map(m => m.JoinDate).Name("JoinDate");
         Map(m => m.Count300).Name("Count300");
         Map(m => m.Count100).Name("Count100");

@@ -1,43 +1,18 @@
-﻿using System.Dynamic;
+using System.Dynamic;
 using Microsoft.VisualBasic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using CsvHelper;
 using CsvHelper.Configuration;
-using OsuLinkGraph.Models;
+using OsuConnectionsGephiGraph.Models;
 using System.Threading.Channels;
 using System.Text.RegularExpressions;
 using System.Globalization;
 
+namespace OsuConnectionsGephiGraph;
 
-namespace OsuLinkGraph;
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        csvGenerator gen = new csvGenerator();
-        List<string> scrapeList = new List<string>(){};
-        gen.init(depth: 5, apiKey: "");
-
-        foreach(string scrapeUid in scrapeList)
-        {
-            try
-            {
-                gen.execute(scrapeUid);
-            }
-            catch(Exception e){
-                Console.WriteLine(e.Message);
-            }   
-        }
-        
-        gen.deinit();
-
-    }
-}
-
-class csvGenerator {
-    private const string resFileName = "../../../res.csv";
+public class OsuCsvGenerator{
+    private string resFileName = $"{Directory.GetCurrentDirectory()}/res.csv";
     private static HttpClient client = new HttpClient();
 
     private string apiKey;
@@ -70,7 +45,7 @@ class csvGenerator {
         if(apiKey == null || apiKey == ""){
             throw new ArgumentNullException("Provide an APIKey");
         }else{
-            this.apiKey = apiKey
+            this.apiKey = apiKey;
         }
 
         if(depth>0){
@@ -260,5 +235,5 @@ class csvGenerator {
 
         return userids;
     }
-
+    
 }
