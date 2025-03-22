@@ -4,6 +4,9 @@ Made in collaboration with @praeludiumOrbis
 ## The project
 Displaying the connections in the OSU community and its country clusters in a graph. 
 
+## Examples
+<img src="Examples/world.jpg" width="70%" />
+
 ## Usage
 <p>
 Simplest way to run is to install the dotnet 8 runtime and run as local build.<br>
