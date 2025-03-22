@@ -1,4 +1,4 @@
-# OSU Connections in a Graph
+# osu! Connections in a Graph
 Made in collaboration with [praeludiumOrbis](https://github.com/praeludiumOrbis)
 
 ## The project
